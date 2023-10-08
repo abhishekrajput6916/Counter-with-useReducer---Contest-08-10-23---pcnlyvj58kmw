@@ -10,6 +10,8 @@ const counterReducer = (state,action) =>{
                 ...state,
                 count:state.count-1,
             }
+        default:
+            return state;
     }
 }
 
