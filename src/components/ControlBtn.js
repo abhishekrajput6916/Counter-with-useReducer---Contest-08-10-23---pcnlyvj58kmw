@@ -1,5 +1,5 @@
-export default function ControlBtn({id,dispatch,payload}){
+export default function ControlBtn({id,state,dispatch,payload}){
     return <button id={id} onClick={()=>{
-        dispatch({type:payload})
+        dispatch(state,{type:payload})
     }} >{payload}</button>
 }
